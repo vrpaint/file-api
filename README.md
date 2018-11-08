@@ -1,4 +1,4 @@
-# Book API
+# 3D Paint API
 
 ## Usage
 ```
