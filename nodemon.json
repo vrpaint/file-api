@@ -1,0 +1,6 @@
+{
+  "watch": ["src", "typings"],
+  "ext": "ts,graphqls",
+  "ignore": ["test/**/*.test.ts"],
+  "exec": "npm run start"
+}

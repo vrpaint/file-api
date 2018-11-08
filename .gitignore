@@ -1,0 +1,10 @@
+# Editor configurations
+.vscode/
+.idea/
+
+# Node
+node_modules
+
+.env
+
+yarn.lock
