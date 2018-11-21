@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import { fileRouter } from './endpoints/file/fileRouter';
+import { fileJsonRouter } from './endpoints/file/fileJsonRouter';
 
 import cors from 'cors';
 import { expressLogger } from './logger';
@@ -22,6 +22,6 @@ app.use(cors(corsOptions));
 app.use(json({ limit: '25mb' }));
 app.use(bodyParser.json());
 
-app.use(fileRouter);
+app.use(fileJsonRouter);
 
 export { app };
