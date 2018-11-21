@@ -12,12 +12,13 @@ config.update({
 const s3 = new S3();
 
 
-//const storage = multer.memoryStorage()
-//const upload = multer({storage});
+const storage = multer.memoryStorage()
+const upload = (multer as any)({storage});
 
+console.log9
 
 fileRouter.get('/file/:id', fileGet);
-//fileRouter.post('/file/:id', upload.single("file"), awsWorker.doUpload);
+fileRouter.post('/file/:id', upload.single("file"), filePost);
 
 async function fileGet(req: Request, res: Response, next: NextFunction) {
     try {
@@ -40,16 +41,17 @@ async function fileGet(req: Request, res: Response, next: NextFunction) {
 
 
  
-/*
+
 async function filePost(req: Request, res: Response, next: NextFunction) {
 	
-
+    console.log(req.file.originalname);
+    /*
 	s3.upload(params, (err, data) => {
 		if (err) {
 			res.status(500).json({error:"Error -> " + err});
 		}
 		res.json({message: 'File uploaded successfully! -> keyname = ' + req.file.originalname});
-	});
+    });
+    */
 }
-*/
- 
+
