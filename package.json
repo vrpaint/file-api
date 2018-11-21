@@ -1,5 +1,5 @@
 {
-    "name": "3d-paint-api",
+    "name": "file-api",
     "version": "0.1.0",
     "author": "Pavol Hejný<me@pavolhejny.com>",
     "main": "./src/main.ts",
