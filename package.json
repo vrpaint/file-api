@@ -10,7 +10,7 @@
         "release": "node release.js"
     },
     "dependencies": {
-        "aws-sdk": "^2.304.0",
+        "aws-sdk": "^2.814.0",
         "body-parser": "^1.18.3",
         "cors": "^2.8.4",
         "dotenv": "^6.0.0",
